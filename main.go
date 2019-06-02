@@ -14,7 +14,7 @@ import (
 
 func main() {
 	exporter, err := jaeger.NewExporter(jaeger.Options{
-		AgentEndpoint: "localhost:6831",
+		AgentEndpoint: "jaeger-agent:6831",
 		Process: jaeger.Process{
 			ServiceName: "demo",
 		},
